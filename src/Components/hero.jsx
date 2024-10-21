@@ -3,7 +3,7 @@ import home from '../assets/Home.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import myself from '../assets/Myself.png';
-import bar from '../assets/bar.png'; // Assuming you have a bar icon if needed
+import bar from '../assets/bar.png';
 import './hero.css';
 
 export default function Hero() {
@@ -16,30 +16,32 @@ export default function Hero() {
     return (
         <div className="bg-black min-h-screen text-white">
             <div className="blurry-dot absolute h-40 w-40 sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
-            <nav className="flex flex-row sm:flex-row justify-between items-center sm:gap-x-[20vw] p-4">
-                <h1 className="text-xl font-bold mb-4 sm:mb-0">Mridul Dhamija</h1>
+            <nav className="flex justify-between items-center p-4">
+                <h1 className="text-xl font-bold">Mridul Dhamija</h1>
                 <button 
                     className="navbar-toggle sm:hidden" 
                     onClick={toggleNavbar}
                 >
                     <img src={bar} alt="Toggle Menu" className="w-6 h-6 invert" />
                 </button>
-                <div className={`transition-all duration-300 ease-in-out flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'} sm:max-h-full sm:opacity-100 sm:overflow-visible`}>
-                    <a href="#" className="flex items-center mb-2 sm:mb-0">
-                        <img src={home} alt="Home" className="w-5 h-5 mr-1 invert" />
-                        Home
-                    </a>
-                    <a href="#" className="flex items-center mb-2 sm:mb-0">
-                        <img src={github} alt="GitHub" className="w-5 h-5 mr-1 invert" />
-                        GitHub
-                    </a>
-                    <a href="#" className="flex items-center mb-2 sm:mb-0">
-                        <img src={linkedin} alt="LinkedIn" className="w-5 h-5 mr-1 invert" />
-                        LinkedIn
-                    </a>
-                    <button className="bg-transparent text-purple-700 border text-sm sm:text-lg border-purple-700 px-4 py-2 rounded-full hover:text-white hover:bg-purple-700 transition-colors duration-300">
-                        Contact
-                    </button>
+                <div className={`fixed top-0 left-0 h-full w-64 bg-black z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} sm:static sm:h-auto sm:w-auto sm:bg-transparent sm:transform-none sm:transition-none sm:flex sm:items-center`}>
+                    <div className="flex flex-col h-full p-4 sm:flex-row sm:p-0">
+                        <a href="#" className="flex items-center mb-4 sm:mb-0 sm:mr-4">
+                            <img src={home} alt="Home" className="w-5 h-5 mr-1 invert" />
+                            Home
+                        </a>
+                        <a href="#" className="flex items-center mb-4 sm:mb-0 sm:mr-4">
+                            <img src={github} alt="GitHub" className="w-5 h-5 mr-1 invert" />
+                            GitHub
+                        </a>
+                        <a href="#" className="flex items-center mb-4 sm:mb-0 sm:mr-4">
+                            <img src={linkedin} alt="LinkedIn" className="w-5 h-5 mr-1 invert" />
+                            LinkedIn
+                        </a>
+                        <button className="bg-transparent text-purple-700 border text-sm sm:text-lg border-purple-700 px-4 py-2 rounded-full hover:text-white hover:bg-purple-700 transition-colors duration-300">
+                            Contact
+                        </button>
+                    </div>
                 </div>
             </nav>
             <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24">
