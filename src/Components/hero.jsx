@@ -16,7 +16,7 @@ export default function Hero() {
     return (
         <div className="bg-black min-h-screen text-white">
             <div className="blurry-dot absolute h-40 w-40 sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
-            <nav className="flex justify-between items-center flex-col sm:flex-row    sm:p-2">
+            <nav className="flex justify-between items-center flex-col  sm:flex-row    sm:p-2">
                 <h1 className="text-xl font-bold ">Mridul Dhamija</h1>
                 <button 
                     className="navbar-toggle ml-[4vw] h-[4vh] w-[6vw] sm:hidden" 
@@ -42,7 +42,7 @@ export default function Hero() {
                             Contact
                         </button>
                     </div>
-                    <div className='ml-[22vw] mt-[2vw]'>
+                    <div className='ml-[22vw] mt-[2vw] sm:hidden'>
                     <svg onClick={toggleNavbar} class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
   <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
 </svg>
