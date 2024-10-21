@@ -1,0 +1,23 @@
+.blurry-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(38, 38, 223, 0.947); 
+    border-radius: 50%;
+    filter: blur(110px);
+    animation: pulse 2s infinite ease-in-out;
+    transform: translate(-50%, -50%);
+  }
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.3);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
