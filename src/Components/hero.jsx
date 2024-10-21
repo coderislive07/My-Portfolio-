@@ -16,13 +16,13 @@ export default function Hero() {
     return (
         <div className="bg-black min-h-screen text-white">
             <div className="blurry-dot absolute h-40 w-40 sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
-            <nav className="flex justify-between items-center p-4">
-                <h1 className="text-xl font-bold">Mridul Dhamija</h1>
+            <nav className="flex justify-between items-center flex-col sm:flex-row    sm:p-2">
+                <h1 className="text-xl font-bold ">Mridul Dhamija</h1>
                 <button 
-                    className="navbar-toggle md:hidden" 
+                    className="navbar-toggle ml-[4vw] h-[4vh] w-[6vw] sm:hidden" 
                     onClick={toggleNavbar}
                 >
-                    <img src={bar} alt="Toggle Menu" className="w-6 h-6 invert" />
+                    <img src={bar} alt="Toggle Menu" className="w-full h-full invert" />
                 </button>
                 <div className={`fixed top-0 left-0 h-full w-64 bg-black z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} sm:static sm:h-auto sm:w-auto sm:bg-transparent sm:transform-none sm:transition-none sm:flex sm:items-center`}>
                     <div className="flex flex-col h-full p-4 sm:flex-row sm:p-0">
