@@ -19,7 +19,7 @@ export default function Hero() {
             <nav className="flex justify-between items-center p-4">
                 <h1 className="text-xl font-bold">Mridul Dhamija</h1>
                 <button 
-                    className="navbar-toggle sm:hidden" 
+                    className="navbar-toggle md:hidden" 
                     onClick={toggleNavbar}
                 >
                     <img src={bar} alt="Toggle Menu" className="w-6 h-6 invert" />
