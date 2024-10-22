@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import home from '../assets/Home.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import myself from '../assets/Myself.png';
@@ -46,9 +45,11 @@ export default function Hero() {
                             <img src={linkedin} alt="LinkedIn" className="w-5 h-5 mr-1 invert" />
                             LinkedIn
                         </a>
+                             <a href="mailto:dhamijamridul@gmail.com">
                         <button className="bg-transparent text-purple-700 border text-sm sm:text-lg border-purple-700 px-4 py-2 rounded-full hover:text-white hover:bg-purple-700 transition-colors duration-300">
                             Contact
                         </button>
+                        </a>
                     </div>
                     <div className='ml-[22vw] mt-[2vw] sm:hidden'>
                         <svg onClick={toggleNavbar} className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
