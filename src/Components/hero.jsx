@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="bg-black min-h-screen text-white relative">
             <div className="blurry-dot absolute h-40 w-40 sm:h-56  md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
             <nav 
-                className={`flex justify-between items-center flex-col sm:w-[90vw] lg:w-full lg:ml-[0]  md:ml-[-10vw]  sm:ml-[-13vw]  sm:flex-row sm:pt-4 w-full  transition-all duration-300 `}
+                className={`flex justify-between  items-center flex-col sm:w-[90vw] lg:w-full lg:ml-[0] sm:mt-[0]   md:ml-[-10vw]  sm:ml-[-13vw]  sm:flex-row sm:pt-4 w-[60vw] mt-[4vw]  transition-all duration-300 `}
                 onMouseEnter={() => setIsNavHovered(true)}
                 onMouseLeave={() => setIsNavHovered(false)}
             >
@@ -58,7 +58,7 @@ export default function Hero() {
                     </div>
                 </div>
             </nav>
-            <div className={`flex flex-col-reverse md:flex-row md:w-[80vw]  items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
+            <div className={`flex flex-col-reverse md:flex-row ml-[13vw] sm:ml-[0] md:w-[80vw]  items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
                 <div className="max-w-lg mt-8 md:ml-[-20vw] lg:ml-[0] md:px-[10vw] lg:px-[0] md:mt-0">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">
                         Mern Stack Developer
