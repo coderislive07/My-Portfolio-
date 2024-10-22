@@ -26,7 +26,7 @@ export default function Hero() {
                     className="navbar-toggle ml-[4vw] h-[4vh] w-[6vw] sm:hidden" 
                     onClick={toggleNavbar}
                 >
-                    <img src={bar} alt="Toggle Menu" className="w-full h-full invert" />
+                    <img src={bar} alt="Toggle Menu" className="w-full mt-[5vw] mb-[4vw] h-full invert" />
                 </button>
                 <div className={`fixed flex flex-row top-0 left-0 h-full w-64 bg-black z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} sm:static sm:h-auto sm:w-auto sm:bg-transparent sm:transform-none sm:transition-none sm:flex sm:items-center`}>
                     <div className="flex flex-col h-full p-4 sm:flex-row sm:p-0 sm:gap-x-4">
@@ -70,7 +70,7 @@ export default function Hero() {
                         Download CV
                     </button>
                 </div>
-                <div className="relative w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
+                <div className="relative w-[280px] h-[280px] mt-[5vh] sm:mt-[0] sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
                     <div className="wobble-border"></div>
                     <img 
                         src={myself} 
