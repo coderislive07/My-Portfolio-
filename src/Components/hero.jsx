@@ -15,13 +15,13 @@ export default function Hero() {
 
     return (
         <div className="bg-black min-h-screen text-white relative">
-            <div className="blurry-dot absolute h-40 w-40 sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
+            <div className="blurry-dot absolute h-40 w-40 sm:h-56  md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
             <nav 
-                className={`flex justify-between items-center flex-col sm:flex-row sm:p-2 transition-all duration-300 ${isNavHovered ? 'sticky top-0 z-50 bg-black bg-opacity-90' : ''}`}
+                className={`flex justify-between items-center flex-col sm:w-[90vw] lg:w-full lg:ml-[0]  md:ml-[-10vw]  sm:ml-[-13vw]  sm:flex-row sm:pt-4 w-full  transition-all duration-300 ${isNavHovered ? 'sticky top-0 z-50 bg-black bg-opacity-90' : ''}`}
                 onMouseEnter={() => setIsNavHovered(true)}
                 onMouseLeave={() => setIsNavHovered(false)}
             >
-                <h1 className="text-xl font-bold">Mridul Dhamija</h1>
+                <h1 className="text-xl  font-bold">Mridul Dhamija</h1>
                 <button 
                     className="navbar-toggle ml-[4vw] h-[4vh] w-[6vw] sm:hidden" 
                     onClick={toggleNavbar}
@@ -51,19 +51,19 @@ export default function Hero() {
                         </button>
                         </a>
                     </div>
-                    <div className='ml-[22vw] mt-[2vw] sm:hidden'>
+                    <div className='ml-[12vw] mt-[2vw]  sm:hidden'>
                         <svg onClick={toggleNavbar} className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                         </svg>
                     </div>
                 </div>
             </nav>
-            <div className={`flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
-                <div className="max-w-lg mt-8 md:mt-0">
+            <div className={`flex flex-col-reverse md:flex-row md:w-[80vw]  items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
+                <div className="max-w-lg mt-8 md:ml-[-20vw] lg:ml-[0] md:px-[10vw] lg:px-[0] md:mt-0">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">
                         Mern Stack Developer
                     </h2>
-                    <p className="text-base sm:text-lg mb-6">
+                    <p className="text-base sm:text-lg md:text-md mb-6">
                         I'm Mridul, a Mern Stack Developer with a focus on developing efficient and scalable web applications, blending technical expertise with real-world experience.
                     </p>
                     <button className="bg-transparent text-purple-700 border text-sm sm:text-lg border-purple-700 px-4 py-2 rounded-full hover:text-white hover:bg-purple-700 transition-colors duration-300">
