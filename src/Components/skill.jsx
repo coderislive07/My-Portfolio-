@@ -29,7 +29,7 @@ export default function Skill() {
                     Demonstrating proficiency in modern frameworks for developing scalable and efficient web applications.
                 </p>
                 <div 
-                    className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8"
+                    className="grid w-[60vw] sm:w-full grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8"
                     onMouseEnter={() => setMakeScale(true)}
                     onMouseLeave={() => setMakeScale(false)}
                 >

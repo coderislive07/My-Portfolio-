@@ -37,7 +37,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="bg-gray-800 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 transition-all duration-300 hover:bg-purple-800 hover:bg-opacity-40 hover:border-purple-500 border border-transparent"
+              className="bg-gray-800 w-[60vw] sm:w-full rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 transition-all duration-300 hover:bg-purple-800 hover:bg-opacity-40 hover:border-purple-500 border border-transparent"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(-1)}
             >
@@ -56,7 +56,7 @@ export default function Experience() {
           ))}
         </div>
       </div>
-      <footer className="bg-gray-900 text-white py-8 px-2 sm:px-4">
+      <footer className="bg-gray-900 text-white   w-[60vw] sm:w-full  py-8 px-2 sm:px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center justify-between sm:flex-row">
           <div className="mb-4 sm:mb-0 text-center sm:text-left">
