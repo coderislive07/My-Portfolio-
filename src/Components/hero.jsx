@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="bg-black min-h-screen text-white relative">
             <div className="blurry-dot absolute h-40 w-40 sm:h-56  md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96"></div>
             <nav 
-                className={`flex justify-between items-center flex-col sm:w-[90vw] lg:w-full lg:ml-[0]  md:ml-[-10vw]  sm:ml-[-13vw]  sm:flex-row sm:pt-4 w-full  transition-all duration-300 ${isNavHovered ? 'sticky top-0 z-50 bg-black bg-opacity-90' : ''}`}
+                className={`flex justify-between items-center flex-col sm:w-[90vw] lg:w-full lg:ml-[0]  md:ml-[-10vw]  sm:ml-[-13vw]  sm:flex-row sm:pt-4 w-full  transition-all duration-300 `}
                 onMouseEnter={() => setIsNavHovered(true)}
                 onMouseLeave={() => setIsNavHovered(false)}
             >
@@ -70,7 +70,7 @@ export default function Hero() {
                         Download CV
                     </button>
                 </div>
-                <div className="relative w-[280px] h-[280px] mt-[5vh] sm:mt-[0] sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
+                <div className="relative w-[280px] h-[280px] mt-[5vh]  sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
                     <div className="wobble-border"></div>
                     <img 
                         src={myself} 

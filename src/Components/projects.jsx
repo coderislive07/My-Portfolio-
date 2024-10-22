@@ -41,7 +41,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-gray-900 w-[65vw] px-[-40vw] sm:w-full text-white min-h-screen p-4 sm:p-6 md:p-8">
+    <div className="bg-gray-900  w-[65vw]  px-[-40vw] sm:w-full text-white min-h-screen p-4 sm:p-6 md:p-8">
       <h1 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-purple-500 mb-2 sm:mb-4">Portfolio</h1>
       <p className="text-base xs:text-lg sm:text-xl mb-4 sm:mb-6 md:mb-8">Explore a curated selection of projects that highlight creativity, innovation, and technical excellence.</p>
       
