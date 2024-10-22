@@ -27,7 +27,7 @@ export default function Experience() {
   const [hoveredIndex, setHoveredIndex] = useState(-1)
 
   return (
-    <div className="text-white py-8  sm:py-12 md:py-16 px-2 sm:px-4">
+    <div className="text-white  py-8  sm:py-12 md:py-16 px-2 sm:px-4">
       <div className="max-w-6xl mb-[10vh] mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 text-purple-500">Experience</h2>
         <p className="text-base w-[70vw] sm:w-full sm:text-lg md:text-xl mb-6 sm:mb-8 md:mb-12 text-gray-300">

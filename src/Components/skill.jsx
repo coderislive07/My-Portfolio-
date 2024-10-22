@@ -23,7 +23,7 @@ export default function Skill() {
 
     return (
         <div className="text-white py-6   sm:py-8 md:py-12  sm:px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="     mx-auto">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4 text-purple-500">Skills</h2>
                 <p className="text-sm w-[70vw] sm:w-full  sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-gray-300">
                     Demonstrating proficiency in modern frameworks for developing scalable and efficient web applications.

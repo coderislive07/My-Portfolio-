@@ -58,8 +58,8 @@ export default function Hero() {
                     </div>
                 </div>
             </nav>
-            <div className={`flex flex-col-reverse md:flex-row ml-[13vw] sm:ml-[0] md:w-[80vw]  items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
-                <div className="max-w-lg mt-8 md:ml-[-20vw] lg:ml-[0] md:px-[10vw] lg:px-[0] md:mt-0">
+            <div className={`flex flex-col-reverse md:flex-row ml-[13vw]  sm:ml-[0] md:w-[80vw]  items-center justify-between px-4 sm:px-8 md:px-16 py-8 md:py-24 transition-all duration-300 ${isNavHovered ? 'blur-sm' : ''}`}>
+                <div className="max-w-lg  w-[70vw] sm:w-full mt-8 md:ml-[-20vw] lg:ml-[0] md:px-[10vw] lg:px-[0] md:mt-0">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text">
                         Mern Stack Developer
                     </h2>
