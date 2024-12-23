@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
-import myself from '../assets/Myself.png';
+import myself from '../assets/m.png';
 import bar from '../assets/bar.png';
 import './hero.css';
 
@@ -75,7 +75,7 @@ export default function Hero() {
                     <img 
                         src={myself} 
                         alt="Mridul Dhamija" 
-                        className="absolute inset-0 w-full h-full object-cover rounded-full md:h-[70vh] md:mt-[-20vh] z-10"
+                        className="absolute inset-0 w-full h-full object-cover rounded-full md:h-[62vh] md:mt-[-15vh] z-10"
                     />
                 </div>
             </div>
