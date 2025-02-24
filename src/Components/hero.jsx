@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
-import myself from '../assets/m.png';
+import myself from '../assets/mey.png';
 import bar from '../assets/bar.png';
 import './hero.css';
 
@@ -70,12 +70,12 @@ export default function Hero() {
                         Download CV
                     </button>
                 </div>
-                <div className="relative w-[280px] h-[280px] mt-[5vh]  sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
+                <div className="relative w-[280px] h-[280px] mt-[14vh]  sm:w-[380px] sm:h-[380px] md:w-[480px] md:h-[400px] wobble-container">
                     <div className="wobble-border"></div>
                     <img 
                         src={myself} 
                         alt="Mridul Dhamija" 
-                        className="absolute inset-0 w-full h-full object-cover rounded-full md:h-[62vh] md:mt-[-15vh] z-10"
+                        className="absolute inset-0 w-full h-full object-cover rounded-full md:w-[28vw] md:h-[72vh] md:mt-[-20vh] z-10"
                     />
                 </div>
             </div>
